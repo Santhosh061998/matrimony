@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "name": "Simbu",
+      "image": "assets/simbu.jpg",
+      "bio":"27 years,5 ft,BCA,Software developer,Tamil,Chennai,Tamilnadu,India"
+    },
+    {
+      "id": 2,
+      "name": "Surya",
+      "image": "assets/surya.jpg",
+     "bio":"26 years,5 ft,MBBS,Software Engineer,Tamil,Chennai,Tamilnadu,India"
+    },
+    {
+      "id": 3,
+      "name": "Vijay",
+      "image": "assets/vijay.jpg",
+      "bio":"29 years,5 ft,BE,Software developer,Tamil,Chennai,Tamilnadu,India"
+    },
+    {
+      "id": 4,
+      "name": "Vishnu",
+      "image": "assets/vishnu.jpg",
+      "bio":"29 years,5 ft,BE,Software developer,Tamil,Chennai,Tamilnadu,India"
+    },
+    {
+      "id": 5,
+      "name": "Karthi",
+      "image": "assets/karthi.jpg",
+      "bio":"29 years,5 ft,BE,Software developer,Tamil,Chennai,Tamilnadu,India"
+    },
+    {
+      "id": 6,
+      "name": "Jiva",
+      "image": "assets/jiva.jpg",
+      "bio":"29 years,5 ft,BE,Software developer,Tamil,Chennai,Tamilnadu,India"
+    }
+  ]
+  

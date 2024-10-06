@@ -1,0 +1,43 @@
+<div class="overallcontainer">
+   <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 toolbar" >
+      <span class="toolbar_font">My Matches</span>
+      <span ><mat-icon class="toolbar_font" >more_vert</mat-icon></span>
+    </div>
+   
+   </div>
+
+   <div>
+    <swiper-container loop="true">
+      <swiper-slide *ngFor="let profile of profiles">
+        <div class="card">
+          <img [src]="profile.image" alt="" >
+          <div class="footer">
+            <div class="namediv">
+              <div class="name_font">{{profile.name}}</div>
+              <div class="bio_font">{{profile.bio}}</div>
+            </div>
+            <div class="button_container">
+              <button class="yesbtn" (click)="getdetails(profile)">Yes</button>
+              <button class="nobtn" (click)="reject(profile)">No</button>
+            </div>
+           
+          </div>
+        </div>
+       
+      </swiper-slide>
+    </swiper-container>
+  </div>
+  
+  
+
+ 
+  
+   
+
+   
+
+  
+</div>
+
+

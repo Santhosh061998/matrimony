@@ -1,0 +1,36 @@
+<div>
+    <swiper-container #swiperRef loop="true">
+      <swiper-slide *ngFor="let profile of nextprofile;let i=index">
+        <div class="card">
+          <img [src]="profile.image" alt="" >
+          <div class="footer">
+            <div class="namediv">
+              <div class="name_font">{{profile.name}}</div>
+              <div class="bio_font">{{profile.bio}}</div>
+            </div>
+            <div class="button_container">
+                <div class="subbtn" (click)="shortlisted(profile,i)">
+                    <span *ngIf="star"><mat-icon>star_outline</mat-icon></span>
+                    <span *ngIf="!star"><mat-icon>star</mat-icon></span>
+                    <span>Shortlist</span>
+                </div>
+                <div class="subbtn">
+                    <span class="bio_font">Like hime?</span>
+                    <button class="yesbtn" (click)="selected(profile,i)"><mat-icon>check</mat-icon></button>
+                    <button class="nobtn" (click)="notintrested(profile,i)" >
+                        <mat-icon>close</mat-icon>
+                        </button> 
+                    
+                </div>
+               
+              <!-- <button class="yesbtn" (click)="selected(profile,i)"><mat-icon>check_circle</mat-icon></button>
+              <button class="nobtn" (click)="shortlisted(profile,i)" ><mat-icon>star</mat-icon></button>
+              <button class="nobtn" (click)="notintrested(profile,i)" >close</button> -->
+            </div>
+           
+          </div>
+        </div>
+       
+      </swiper-slide>
+    </swiper-container>
+  </div>
