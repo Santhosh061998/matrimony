@@ -1,11 +1,4 @@
 
-.overallcontainer{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    background-color: blue;
-    height: -webkit-fill-available;
-}
 .toolbar{
     display: flex;
     justify-content: space-between;

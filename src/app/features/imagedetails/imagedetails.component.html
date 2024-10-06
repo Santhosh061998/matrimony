@@ -1,5 +1,6 @@
-<div>
-    <swiper-container #swiperRef loop="true">
+
+<div class="overallcontainer">
+    <swiper-container  loop="false">
       <swiper-slide *ngFor="let profile of nextprofile;let i=index">
         <div class="card">
           <img [src]="profile.image" alt="" >

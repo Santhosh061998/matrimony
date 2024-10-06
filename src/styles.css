@@ -9,6 +9,14 @@ line-height: 20px;
 color: white;
 }
 
+.overallcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: rgb(95, 95, 233);
+    height: -webkit-fill-available;
+}
+
 .name_font{
     font-size: 16px;
     font-weight: 600;
