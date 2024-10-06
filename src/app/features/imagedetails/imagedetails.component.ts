@@ -63,22 +63,28 @@ ngOnInit(): void {
 }
 
 selected(profile:any,index:any){
-  console.log(profile);
   this.snackBar.open('Profile Selected', 'Close', {
     duration: 3000,
   });
 
   console.log(this.nextprofile);
   setTimeout(()=>{
-    this.nextprofile.splice(index,1)
+    if(this.nextprofile.length!=1){
+      this.nextprofile.splice(index,1);
+
+    }
   },1000)
   
 }
 shortlisted(profile:any,index:any){
   this.star=false;
   setTimeout(()=>{
+    if(this.nextprofile.length!=1){
     this.star=true;
-    this.nextprofile.splice(index,1)
+
+      this.nextprofile.splice(index,1);
+
+    }
   },1000)
    this.snackBar.open("Profile Shortlisted", 'Close', {
         duration: 3000,
@@ -91,7 +97,10 @@ notintrested(profile:any,index:any){
         duration: 3000,
       });
       setTimeout(()=>{
-        this.nextprofile.splice(index,1)
+        if(this.nextprofile.length!=1){
+          this.nextprofile.splice(index,1);
+    
+        }
       },1000)
 }
 
